@@ -1,3 +1,6 @@
+![Node.js CI](https://github.com/Devcognitio/hello-serverless/workflows/Node.js%20CI/badge.svg)
+[![codecov](https://codecov.io/gh/Devcognitio/hello-serverless/branch/master/graph/badge.svg?token=4Z79Z3QLY3)](https://codecov.io/gh/Devcognitio/hello-serverless)
+
 # hello-serverless
 This is an example project where we show a complete example creating, testing and deploying an AWS Lambda using Serverless Framework, NodeJS, Jest, AWS-SDK, AWS-Mock, Codecov and github actions.
 For a complete guide please follow this [Medium post](https://medium.com/devco-tech-blog/how-i-developed-tested-and-automatically-deployed-an-aws-lambda-for-the-first-time).
