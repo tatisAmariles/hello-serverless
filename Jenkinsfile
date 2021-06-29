@@ -4,20 +4,22 @@ pipeline{
         stage('build'){
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
-                echo '---> Install all project dependencies...'
+                echo '**************************** Install all project dependencies**********************************'
                 sh 'npm install'
+                sh 'npm build'
                 }
             }
         } 
-        stage('unitTest'){
+        stage('test'){
             steps{
-                echo '---> Testing...'               
+                echo '****************************Testing ****************************'               
             }
         }
         stage('deploy'){
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
                     withAWS(credentials: 'aws-credentials'){
+                        echo '****************************deploy ****************************'  
                         sh 'serverless deploy'
                     }
                 }
