@@ -6,7 +6,7 @@ pipeline{
                 nodejs(nodeJSInstallationName: 'nodejs'){
                 echo '**************************** Install all project dependencies**********************************'
                 sh 'npm install'
-                sh 'npm build'
+                
                 }
             }
         } 
